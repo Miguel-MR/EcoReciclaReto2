@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#27A56C38"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pngwing_com"
+                android:contentDescription="@string/todo5" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:fontFamily="@font/product_sans_bold"
+                android:text="@string/estad_sticas" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/reporte_a_nivel_nacional"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="173dp"
+                android:src="@drawable/pais_reporte"
+                android:contentDescription="@string/todo4" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/reportes_por_material"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:contentDescription="@string/todo6"
+                android:src="@drawable/residuos"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/su_reporte_generado"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="320dp"
+                android:layout_height="173dp"
+                android:contentDescription="@string/todo7"
+                android:src="@drawable/grafica_de_residuos_solidos_urbanos_en_espana_236824ff_800x312"
+                tools:ignore="ImageContrastCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/buttonRegreso"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D38C6745"
+                app:icon="?attr/actionModeCloseDrawable"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
