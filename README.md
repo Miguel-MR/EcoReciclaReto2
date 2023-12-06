@@ -4,10 +4,11 @@
 
 
 
-| Splash Inicial | Figura | Figura |
+| Splash Inicial | Login | Registro|
 |----------------|--------|--------|
 | ![image](https://github.com/Miguel-MR/EcoReciclaReto2/assets/140467089/230e79b1-4048-40ae-9248-13fa89c636e4)|![image](https://github.com/Miguel-MR/EcoReciclaReto2/assets/140467089/4bbb58c7-3bbf-4a2b-a0ab-a3536bf31cc7)
-|![imagen](img/3.png) |
+|![image](https://github.com/Miguel-MR/EcoReciclaReto2/assets/140467089/8d57a51c-558c-4b63-8ff4-668392f7f162)
+ |
 | ![imagen](img/4.png)|![imagen](img/5.png) |![imagen](img/6.png) |
 | ![imagen](img/7.png)|![imagen](img/8.png) |![imagen](img/9.png) |
 | ![imagen](img/10.png)|![imagen](img/11.png) |![imagen](img/12.png) |
