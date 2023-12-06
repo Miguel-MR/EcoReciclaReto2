@@ -14,7 +14,10 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="110dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -51,60 +54,112 @@
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
                 android:gravity="center"
                 android:text="@string/perfecto_ahora_ingresa_los_siguiente_datos_para_poder_indicarte_cuantos_puntos_acumulas_por_este_trabajo" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="20dp" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/seleccione_el_tipo_de_medici_n"
+                android:text="Datos:"
                 android:textAlignment="center" />
-
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:gravity="center" />
-
-            <EditText
-                android:id="@+id/editTextNumber"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginEnd="100dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="@string/ingrese_el_total"
-                android:inputType="number"
-                android:textColorHint="#5D4037"
-                android:autofillHints=""
-                tools:ignore="VisualLintTextFieldSize" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="30dp" />
+                android:layout_height="20dp" />
 
-            <EditText
-                android:id="@+id/editTextMes"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginEnd="100dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Ingrese el mes"
-                android:inputType="text"
-                android:minHeight="48dp"
-                android:textColorHint="#5D4037"
-                android:autofillHints=""
-                tools:ignore="VisualLintTextFieldSize" />
+                android:layout_height="58dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMedida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:text="Medida:" />
+
+
+                <EditText
+                    android:id="@+id/editTextMedida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Ingrese la medida"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColorHint="#5D4037"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMedida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:text="Cantidad:" />
+
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/ingrese_el_total2"
+                    android:inputType="number"
+                    android:textColorHint="#5D4037"
+                    android:importantForAutofill="no" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewMedida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:text="Mes:" />
+
+                <EditText
+                    android:id="@+id/editTextMes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Ingrese el mes"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColorHint="#5D4037"
+                    tools:ignore="VisualLintTextFieldSize" />
+
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"

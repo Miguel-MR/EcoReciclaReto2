@@ -29,16 +29,6 @@ public class papel extends AppCompatActivity {
             }
         });
 
-        Spinner spn1 = findViewById(R.id.spinner2);
-        ArrayList Lista = new ArrayList();
-        Lista.add("Gr");
-        Lista.add("Lb");
-        Lista.add("Kg");
-        Lista.add("Hojas");
-
-        ArrayAdapter adap = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, Lista);
-        spn1.setAdapter(adap);
-
         Button puntos = findViewById(R.id.buttonGuar4);
         puntos.setOnClickListener(new View.OnClickListener() {
             @Override

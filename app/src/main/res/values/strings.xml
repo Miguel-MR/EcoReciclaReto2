@@ -20,13 +20,11 @@
     <string name="ingrese_el_total">Ingrese el total</string>
     <string name="todos">TODO</string>
     <string name="perfecto_ahora_ingresa_los_siguiente_datos_para_poder_indicarte_cuantos_puntos_acumulas_por_este_trabajo">¡Perfecto! Ahora ingresa los siguiente datos para poder indicarte cuantos puntos acumulas por este trabajo.</string>
-    <string name="seleccione_el_tipo_de_medici_n">Seleccione el tipo de medición:</string>
     <string name="papel">Papel</string>
     <string name="guardar1">Guardar</string>
     <string name="ingrese_el_total1">Ingrese el total</string>
     <string name="todo1">TODO</string>
     <string name="perfecto_ahora_ingresa_los_siguiente_datos_para_poder_indicarte_cuantos_puntos_acumulas_por_este_trabajo1">¡Perfecto! Ahora ingresa los siguiente datos para poder indicarte cuantos puntos acumulas por este trabajo.</string>
-    <string name="cantidad">Cantidad:</string>
     <string name="pl_stico">Plástico</string>
     <string name="guardar2">Guardar</string>
     <string name="ingrese_el_total2">Ingrese el total</string>
@@ -38,7 +36,6 @@
     <string name="ingresa_el_total_en_ml">Ingresa el total en ml</string>
     <string name="todo3">TODO</string>
     <string name="perfecto_ahora_ingresa_los_siguiente_datos_para_poder_indicarte_cuantos_puntos_acumulas_por_este_trabajo3">¡Perfecto! Ahora ingresa los siguiente datos para poder indicarte cuantos puntos acumulas por este trabajo.</string>
-    <string name="cantidad3">Cantidad:</string>
     <string name="desechos_t_xicos">Desechos Tóxicos</string>
     <string name="todo4">TODO</string>
     <string name="todo5">TODO</string>

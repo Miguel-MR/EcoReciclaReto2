@@ -27,15 +27,6 @@ public class desechost extends AppCompatActivity {
             }
         });
 
-        Spinner spn1 = findViewById(R.id.spinner5);
-        ArrayList Lista = new ArrayList();
-        Lista.add("Gr");
-        Lista.add("Lb");
-        Lista.add("Kg");
-
-        ArrayAdapter adap = new ArrayAdapter(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, Lista);
-        spn1.setAdapter(adap);
-
         Button puntos = findViewById(R.id.buttonGuar1);
         puntos.setOnClickListener(new View.OnClickListener() {
             @Override
