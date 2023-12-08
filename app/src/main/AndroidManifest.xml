@@ -31,7 +31,7 @@
             android:name=".desechost"
             android:exported="true" />
         <activity
-            android:name=".liquidos"
+            android:name=".claseliquidos"
             android:exported="true" />
         <activity
             android:name=".estadisticas"

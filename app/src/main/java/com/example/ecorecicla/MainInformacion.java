@@ -16,7 +16,6 @@ public class MainInformacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_informacion);
 
-        // Crear archivo para usuarios y escribir los datos
         File file1 = new File(getFilesDir(), "registroDeUsuarios.txt");
         try {
             FileWriter writer = new FileWriter(file1);
@@ -27,8 +26,7 @@ public class MainInformacion extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Crear archivo para registro de agua
-        File file2 = new File(getFilesDir(), "agua.txt");
+        File file2 = new File(getFilesDir(), "liquidos.txt");
         try {
             FileWriter writer = new FileWriter(file2);
             writer.append("15,150000,enero\n");
@@ -38,8 +36,7 @@ public class MainInformacion extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Crear archivo para registro de electricidad
-        File file3 = new File(getFilesDir(), "electricidad.txt");
+        File file3 = new File(getFilesDir(), "papel.txt");
         try {
             FileWriter writer = new FileWriter(file3);
             writer.append("15,150000,enero\n");
@@ -49,23 +46,26 @@ public class MainInformacion extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        // Crear archivo para registro de consejos
+        File file5 = new File(getFilesDir(), "plastico.txt");
+        try {
+            FileWriter writer = new FileWriter(file3);
+            writer.append("15,150000,enero\n");
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         File file4 = new File(getFilesDir(), "consejos.txt");
         try {
             FileWriter writer = new FileWriter(file4);
 
-            // Lista de consejos para ahorrar agua y electricidad en un array
             String[] bancodeConsejos = {
-                    "Apaga los electrodomésticos y luces cuando no los estés utilizando.",
+                    "Identifica los materiales reciclables:\n" +
+                            "Es importante reconocer los materiales que son reciclables. \n" +
+                            "Algunos de los materiales comunes que pueden reciclarse incluyen papel, cartón, vidrio, plástico y metal. \n" +
+                            "Investiga los símbolos de reciclaje en los envases y envoltorios para identificar qué materiales pueden ser reciclados y cómo.",
                     "Utiliza bombillas LED de bajo consumo energético.",
-                    "Aprovecha la luz natural abriendo cortinas y persianas durante el día.",
-                    "No dejes los grifos abiertos innecesariamente.",
-                    "Instala aireadores en los grifos.",
-                    "Repara las fugas de agua tan pronto como las detectes.",
-                    "Utiliza lavadoras y lavavajillas con carga completa.",
-                    "Recoge agua de lluvia para regar las plantas.",
-                    "Utiliza programas de lavado en frío en la lavadora.",
-                    "Invierte en electrodomésticos de alta eficiencia energética."
             };
 
             writer.append("Lista de consejos:\n");

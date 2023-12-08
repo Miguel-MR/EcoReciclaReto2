@@ -57,49 +57,38 @@
                 android:textStyle="bold"
                 tools:ignore="TextSizeCheck" />
 
-            <ImageView
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="173dp"
-                android:src="@drawable/pais_reporte"
-                android:contentDescription="@string/todo4" />
-
-            <TextView
-                android:id="@+id/textView15"
+            <TableLayout
+                android:id="@+id/myTableLayout"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="@string/reportes_por_material"
-                android:textAlignment="center"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="TextSizeCheck" />
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:stretchColumns="*">
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="173dp"
-                android:contentDescription="@string/todo6"
-                android:src="@drawable/residuos"
-                tools:ignore="ImageContrastCheck" />
+                <TableRow>
+                    <TextView
+                        android:text="@string/mes"
+                        android:padding="10dp"
+                        android:background="#EEEEEE"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="@string/servicio"
+                        android:padding="10dp"
+                        android:background="#EEEEEE"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:text="@string/consumo"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:background="#EEEEEE" />
 
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:text="@string/su_reporte_generado"
-                android:textAlignment="center"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:ignore="TextSizeCheck" />
+                </TableRow>
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="320dp"
-                android:layout_height="173dp"
-                android:contentDescription="@string/todo7"
-                android:src="@drawable/grafica_de_residuos_solidos_urbanos_en_espana_236824ff_800x312"
-                tools:ignore="ImageContrastCheck" />
+
+            </TableLayout>
 
             <Space
                 android:layout_width="match_parent"
@@ -108,9 +97,10 @@
             <Button
                 android:id="@+id/buttonRegreso"
                 android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:backgroundTint="#D38C6745"
-                app:icon="?attr/actionModeCloseDrawable"/>
+                app:icon="?attr/actionModeCloseDrawable"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Space
                 android:layout_width="match_parent"

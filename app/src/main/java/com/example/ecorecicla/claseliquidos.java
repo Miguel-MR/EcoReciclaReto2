@@ -3,10 +3,8 @@ package com.example.ecorecicla;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,24 +17,23 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Locale;
 
-public class plastico extends AppCompatActivity {
+public class claseliquidos extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.plastico);
+        setContentView(R.layout.claseliquidos);
 
         Button botonRegresar = findViewById(R.id.buttonRegreso);
-        Button botonGuardar = findViewById(R.id.buttonGuar5);
+        Button botonGuardar = findViewById(R.id.buttonGuar2);
         EditText medida = findViewById(R.id.editTextMedida);
         EditText cantidad = findViewById(R.id.editTextNumber);
         EditText mes = findViewById(R.id.editTextMes);
 
         Intent intent1 = new Intent(this, tipo.class);
         Intent intent2 = new Intent(this, categorias.class);
-
         botonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,25 +48,25 @@ public class plastico extends AppCompatActivity {
                     String mesBuscado = mes.getText().toString();
                     boolean mesExiste = verificarMes(mesBuscado);
                     if (mesExiste) {
-                        Toast.makeText(plastico.this, "El mes ya existe", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(claseliquidos.this, "El mes ya existe", Toast.LENGTH_SHORT).show();
                     } else {
                         boolean datosGuardados = guardarDatos(medida.getText().toString(), cantidad.getText().toString(), mes.getText().toString());
                         if (datosGuardados) {
                             startActivity(intent2);
                         } else {
-                            Toast.makeText(plastico.this, "Error al guardar el archivo",
+                            Toast.makeText(claseliquidos.this, "Error al guardar el archivo",
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
                 } else {
-                    Toast.makeText(plastico.this, "Los campos no pueden estar vacíos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(claseliquidos.this, "Los campos no pueden estar vacíos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
 
     public boolean verificarMes(String mesBuscado) {
-        File file = new File(getFilesDir(), "plastico.txt");
+        File file = new File(getFilesDir(), "liquidos.txt");
         mesBuscado = mesBuscado.toLowerCase();
         try {
             FileReader reader = new FileReader(file);
@@ -83,15 +80,17 @@ public class plastico extends AppCompatActivity {
                     return true;
                 }
             }
+
             bufferedReader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return false;
     }
 
     public boolean guardarDatos(String medida, String cantidad, String mes) {
-        File file = new File(getFilesDir(), "plastico.txt"  );
+        File file = new File(getFilesDir(), "liquidos.txt");
         mes = mes.toLowerCase();
         try {
             if (!file.exists()) {

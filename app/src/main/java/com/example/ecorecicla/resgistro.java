@@ -54,39 +54,28 @@ public class resgistro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (terminosCondiciones.isChecked() && tratamientoDatos.isChecked()) {
-                    // Revisar si los campos están diligenciados
                     if (!nombre.getText().toString().isEmpty() && !correo.getText().toString().isEmpty() &&
                             !celular.getText().toString().isEmpty() && !contraseña.getText().toString().isEmpty() &&
                             !repContraseña.getText().toString().isEmpty()) {
-                        // Revisar si las contraseñas coinciden
                         if (contraseña.getText().toString().equals(repContraseña.getText().toString())) {
-                            // Validar si los datos ya existen en el archivo
                             if (valiarDatos(nombre.getText().toString(), correo.getText().toString(), celular.getText().toString())) {
-                                // Los datos ya existen
                                 Toast.makeText(getApplicationContext(), "El usuario ya se encuentra registrado", Toast.LENGTH_SHORT).show();
                             } else {
-                                // Los datos no existen, realizar el registro
-                                // Crear un nuevo objeto Usuario
                                 Usuario nuevoUsuario = new Usuario(nombre.getText().toString(),
                                         correo.getText().toString(), celular.getText().toString(),
                                         contraseña.getText().toString());
-                                // Guardar los datos en el archivo
                                 registrarUsuario(nuevoUsuario);
-                                // Ir al activity de inicio de sesión
                                 startActivity(intent1);
                             }
                         } else {
-                            // Las contraseñas no coinciden
                             Toast.makeText(getApplicationContext(), "Las contraseñas no coinciden",
                                     Toast.LENGTH_SHORT).show();
                         }
                     } else {
-                        // Los campos estan vacios
                         Toast.makeText(getApplicationContext(), "Los campos no pueden estar vacíos",
                                 Toast.LENGTH_SHORT).show();
                     }
                 } else {
-                    // El RadioButton no está activado
                     Toast.makeText(getApplicationContext(), "Debe aceptar los términos y condiciones, " +
                             "tratamiento de datos", Toast.LENGTH_SHORT).show();
                 }

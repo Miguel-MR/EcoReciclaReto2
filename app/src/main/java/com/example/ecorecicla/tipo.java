@@ -14,7 +14,6 @@ public class tipo extends AppCompatActivity {
         setContentView(R.layout.tipo);
 
         Button buttonRegreso = findViewById(R.id.buttonRegreso);
-
         Intent regresarInten = new Intent(this,categorias.class);
         buttonRegreso.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +44,7 @@ public class tipo extends AppCompatActivity {
         liq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent liqui = new Intent(tipo.this, liquidos.class);
+                Intent liqui = new Intent(tipo.this, claseliquidos.class);
                 startActivity(liqui);
             }
         });
